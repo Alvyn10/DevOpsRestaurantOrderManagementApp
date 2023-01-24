@@ -11,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.devopsrestaurantordermanagementapp.HistoryListDetail;
 import com.example.devopsrestaurantordermanagementapp.OrderList;
 import com.example.devopsrestaurantordermanagementapp.R;
 import com.example.devopsrestaurantordermanagementapp.UpdateOrder;

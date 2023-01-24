@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".OrderListDetail">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:hint="Table Number :"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/detail_tablenumber"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:hint=""
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:hint="Customer Name :"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/detail_customername"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:hint=""
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:hint="Order Note :"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/detail_ordernote"
+                    android:layout_width="225dp"
+                    android:layout_height="75dp"
+                    android:hint=""
+                    android:inputType="textMultiLine"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <!-- Americano -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="30dp"
+                    android:hint="Americano"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:hint="45"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint="K"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/qtydetail_Americano"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint=""
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <!-- Cappucino -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="30dp"
+                    android:hint="Cappucino"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:hint="40"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint="K"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/qtydetail_Cappucino"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint=""
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <!-- Macchiato -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="30dp"
+                    android:hint="Macchiato"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:hint="42"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint="K"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/qtydetail_Macchaito"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint=""
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <!-- Espresso -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="30dp"
+                    android:hint="Espresso"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:hint="40"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint="K"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/qtydetail_Espresso"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint=""
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <!-- Latte -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="30dp"
+                    android:hint="Latte"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:hint="45"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint="K"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/qtydetail_Latte"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint=""
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <!-- Chocolate -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="30dp"
+                    android:hint="Chocolate"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:hint="50"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint="K"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/qtydetail_Chocolate"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint=""
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <!-- Matcha Latte -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="30dp"
+                    android:hint="Matcha Latte"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:hint="34"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint="K"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/qtydetail_MatchaLatte"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint=""
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <!-- Thai Tea -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="30dp"
+                    android:hint="Thai Tea"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:hint="30"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint="K"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/qtydetail_ThaiTea"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint=""
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <!-- Red Velvet -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="30dp"
+                    android:hint="Red Velvet"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:hint="32"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint="K"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/qtydetail_RedVelvet"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint=""
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <!-- Green Tea -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="30dp"
+                    android:hint="Green Tea"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:hint="30"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint="K"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/qtydetail_GreenTea"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint=""
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <!-- Sweets -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="30dp"
+                    android:hint="Sweets"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:hint="30"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint="K"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/qtydetail_Sweets"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint=""
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <!-- Cupcake -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="30dp"
+                    android:hint="Cupcake"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:hint="45"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint="K"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/qtydetail_Cupcake"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint=""
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <!-- Doughnut -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="30dp"
+                    android:hint="Doughnut"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:hint="45"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint="K"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/qtydetail_Doughnut"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint=""
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <!-- Croissant -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="30dp"
+                    android:hint="Croissant"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:hint="40"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint="K"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/qtydetail_Croissant"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint=""
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <!-- Cheesecake -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="30dp"
+                    android:hint="Cheesecake"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:hint="25"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint="K"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/qtydetail_Cheesecake"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:hint=""
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:text="Total Price :"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:text="Rp."
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/qtydetail_TotalPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="0"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="K"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btndt_finished"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FINISHED ORDER" />
+            <Button
+                android:id="@+id/btndt_delete"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DELETE" />
+            <Button
+                android:id="@+id/btndt_back"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="back" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
