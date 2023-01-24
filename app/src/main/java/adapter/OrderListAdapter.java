@@ -11,10 +11,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import com.example.db.OrderList;
-import com.example.db.OrderListDetail;
-import com.example.db.R;
-import com.example.db.UpdateOrder;
+import com.example.devopsrestaurantordermanagementapp.OrderList;
+import com.example.devopsrestaurantordermanagementapp.OrderListDetail;
+import com.example.devopsrestaurantordermanagementapp.R;
+import com.example.devopsrestaurantordermanagementapp.UpdateOrder;
 
 import java.io.Serializable;
 import java.util.ArrayList;
